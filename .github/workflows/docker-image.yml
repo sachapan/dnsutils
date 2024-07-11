@@ -39,9 +39,9 @@ jobs:
           context: .
           #platforms: linux/amd64
           push: true
-          tags: ghcr.io/sachapan/dnsutils:latest
+          #tags: ghcr.io/sachapan/dnsutils:latest
           #${{ steps.meta.outputs.tags }}
-          #labels: ${{ steps.meta.outputs.labels }}
-          #tags: ghcr.io/${{ github.repository_owner }}/${{ github.repository }}:${{ github.sha }}
-          #tags: ghcr.io/sachapan/getsubs:${{ github.sha }}
+          labels: ${{ steps.meta.outputs.labels }}
+          tags: ghcr.io/${{ github.repository_owner }}/${{ github.repository }}:${{ github.sha }}
+          
           
