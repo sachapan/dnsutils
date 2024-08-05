@@ -32,5 +32,5 @@ jobs:
         pull: true
         context: .
         push: true
-        tags: ghcr.io/sachapan/dnsutils:latest
+        tags: sachapan/dnsutils:latest
         #${{ github.run_number }}
